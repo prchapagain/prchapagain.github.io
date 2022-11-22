@@ -2,13 +2,13 @@
 # Owner's Personal Information
 ###########################################################
 # This is your brand name
-brand: "Your Brand"
+brand: "More"
 
 # text below the brand name
 brand_sub_text: "$site_sample"
 
 # used for seo meta post author (if it's not defined in post)
-name: "Your Name"
+name: "bbchip13"
 
 # home page top header texts
 home:
@@ -48,8 +48,8 @@ meta_common_description: "Your meta description."
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  #- github: ""
-  #- email: ""
+  - github: "https://github.com/BbChip0103"
+  - email: "bbchip13@gmail.com"
   #- linkedin: ""
   #- twitter: ""
   #- instagram: ""
