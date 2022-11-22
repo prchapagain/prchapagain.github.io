@@ -140,7 +140,7 @@ comments:
   # make sure disqus_shortname is set in _data/owner/[language].yml
   disqus:
     # to enable disqus comments please set to true
-    enable: false
+    enable: true
     # login your disqus account, navigate to admin > settings > Community > Comment Count Link
     # set Zero comments: 0, One comment: 1, Multiple comments: {num} and save it.
     comment_count: true
