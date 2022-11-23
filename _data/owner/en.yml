@@ -2,10 +2,10 @@
 # Owner's Personal Information
 ###########################################################
 # This is your brand name
-brand: "More"
+brand: "bbchip13"
 
 # text below the brand name
-brand_sub_text: "$site_sample"
+brand_sub_text: "Non-stop developer"
 
 # used for seo meta post author (if it's not defined in post)
 name: "bbchip13"
@@ -13,13 +13,13 @@ name: "bbchip13"
 # home page top header texts
 home:
   # you can also use $site_brand, $site_greetings, $site_welcome in line1 and line2 for replacing texts.
-  top_header_line1: "$site_welcome"
+  top_header_line1: "Don't stop"
   # if commented, top header will be a single line
-  top_header_line2: "$site_brand"
+  top_header_line2: "Never give up"
 
 # about page sub title
 about:
-  sub_title: "$site_sample"
+  sub_title: "Non-stop developer"
 
 # if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.

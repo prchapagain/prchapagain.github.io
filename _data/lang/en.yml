@@ -130,7 +130,7 @@ post-list:
 
 # for home layout
 home:
-  title: No pain No gain
+  title: Non-stop developer
   button_name: Home
   new_posts_title: New Articles
   new_posts_show_more_button: View More ...
@@ -167,9 +167,10 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: Hello
-  welcome: More
-  sample: 1111
+  greetings: 이것저것 적어놓는 공간
+  greetings_subtext: 개발, 재테크 등
+  welcome: Don't give up
+  sample: sample
 
 # for cookie consent
 cookie_consent:
