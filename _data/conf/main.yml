@@ -312,7 +312,7 @@ cookie_consent:
     # settings below will be set with gtag("set", ...)
     # these setting may be different in your case. Please check before using it.
     # https://developers.google.com/analytics/devguides/collection/gtagjs
-    anonymize_ip: true
+    anonymize_ip: false
     ads_data_redaction: true
     cookie_flags: 'SameSite=None;Secure'
   groups:
