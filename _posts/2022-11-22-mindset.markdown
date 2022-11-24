@@ -1,0 +1,71 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: id_Examples
+title: 종종 드는 옛날생각
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+author: bbchip13
+# multiple category is not supported
+category: 재테크
+# multiple tag entries are possible
+tags: [
+    재테크, 뻘글
+]
+# thumbnail image for post
+img: ":post_pic1.jpg"
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+date: 2022-11-22 22:11:06 +0900
+
+# if not specified, date will be used.
+#meta_modify_date: 2022-02-10 08:11:06 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# if you enabled image_viewer_posts you don't need to enable this. This is only if image_viewer_posts = false
+#image_viewer_on: true
+# if you enabled image_lazy_loader_posts you don't need to enable this. This is only if image_lazy_loader_posts = false
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+
+종종 옛날 생각이 난다.
+
+2년 전, 아무 것도 모르고 전 재산과 가족의 재산을 코인에 넣고 반토막이 났을 시절.
+
+오를 때는 무지성으로 좋아하다가, 떨어질 때는 왜 떨어지는 거냐고 이유를 찾을 시절.
+
+아는 것이 없어서 그저 오또케 오또케만 되내이며 울던 시절.   
+
+아무 것도 할 수 없을 때 느끼는 무력감이 난 너무나도 싫다.
+
+<br>
+
+그래서 공부를 하게 되었는데, 지금은 확실히 느끼는 것이 많이 달라진 것 같다.
+
+전략을 세웠는데 실패해서 돈을 잃었어도 괜찮다. 다음에는 더 좋은 전략으로 들어갈테니까.
+
+예상치 못한 일로 돈을 잃었어도 괜찮다. 대신 원인을 확실하게 파악해야 한다.  
+
+그치만 예전같이 무지성 투자만큼은 무조건 피해야 한다. 절대로.
+
+<br>
+
+나는 복이 지지리도 없는 놈이라 한방에 인생역전 따위는 절대 바라지 말아야 한다.
+
+머리를 열심히 굴려서 전략을 세우면 잘 될 수도 있고 안될 수도 있다.  근데 마냥 잘 되길 바라고 아무 것도 안하면 무조건 안 좋은 쪽으로 흘러가더라.
+
+나는 세상에서 가장 머리 좋은 사람이 아니다. 그러니까 남의 성공은 참고 정도만 하고 나와 너무 비교하지는 말자.
+
+<br>
+
+<br>
