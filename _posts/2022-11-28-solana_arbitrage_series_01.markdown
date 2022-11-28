@@ -163,7 +163,7 @@ date: 2022-11-28 02:42:06 +0900
 
 > 대규모 숏 포지션의 세력과 현물을 덤핑할 세력이 같은 세력이라고 보장할 수가 없다.
 
-![몬스터] 더빙의 전설, 룽게경감의 '나는 범인이다' - YouTube](https://i.ytimg.com/vi/X9WoV6zsnuw/maxresdefault.jpg)
+![](../assets/img/posts/2022-11-28-solana_arbitrage_series_01/2022-11-28-18-30-24-image.png)
 
 [생각해보자. 나는 세력이다...]
 
