@@ -39,13 +39,13 @@ date: 2022-11-28 02:42:06 +0900
 #published: false
 ---
 
-<img title="" src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-26-18-58-39-image.png" alt="" width="508">
+<img title="" src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-26-18-58-39-image.png" alt="" width="715">
 
 [어디선가 가져온 FTX 파산 타임라인]
 
 <br>
 
-<img src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-27-03-15-47-image.png" title="" alt="" width="513">
+<img title="" src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-27-03-15-47-image.png" alt="" width="745">
 
 [Left: 6~12일 sol 가격 차트. Right: 9~11일 sol 현물 선물 갭 퍼센테이지.]
 
@@ -85,7 +85,7 @@ date: 2022-11-28 02:42:06 +0900
 
 # 배경
 
-<img title="" src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-27-03-09-19-image.png" alt="" width="503">
+<img title="" src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-27-03-09-19-image.png" alt="" width="671">
 
 내가 이 포스팅에서 이야기하는 시점은 빨간 동그라미 친 한국 시간으로 11월 8일에서 9일 넘어가는 새벽이다. 
 
@@ -119,7 +119,7 @@ date: 2022-11-28 02:42:06 +0900
 
 여기서 내가 주목한 부분은 **7번**인데, solana 생태계의 대표적인 렌딩 플랫폼인 solend의 청산맵에서도 확인할 수 있었다.
 
-<img title="" src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-27-03-18-46-image.png" alt="" width="499">
+<img title="" src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-27-03-18-46-image.png" alt="" width="683">
 
  [당시 sol 가격은 \$25 \~ \$28 구간에 있었는데, \$22에 많은 마진 청산 물량이 몰려 있었다]
 
@@ -131,7 +131,9 @@ date: 2022-11-28 02:42:06 +0900
 
 또한 청산맵을 확인해보니 바이낸스/바이빗 둘 다 대규모 숏 포지션이 잡혀있었다.
 
-<img title="" src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-27-15-39-48-image.png" alt="" width="508">
+<img title="" src="../assets/img/posts/2022-11-23-short-farming_gap/2022-11-27-15-39-48-image.png" alt="" width="661">
+
+[bybit에 \$31 즈음에 청산되는 대규모 숏 포지션이 있었고, 이는 binance도 마찬가지였다]
 
 규모를 보니 개미들이 걸 수 있는 수준은 아니었고, 기관/고래급 숏 포지션이 있는 것은 확실해 보였다.
 
@@ -199,7 +201,7 @@ date: 2022-11-28 02:42:06 +0900
 
 # 전략
 
-> **무포지션으로 가만히 지켜본다.**
+> 무포지션으로 가만히 지켜본다.
 
 실컷 떠들어놓고 무슨 뚱딴지같은 소리일까 싶겠지만 '관망'은 종종 아주 좋은 선택지이다.
 
@@ -227,11 +229,11 @@ date: 2022-11-28 02:42:06 +0900
 
 ![](../assets/img/posts/2022-11-23-short-farming_gap/2022-11-28-02-00-20-image.png)
 
-'욕심쟁이 현물 세력 형님의 선물, 마진 청산 물량 모두 다 냠냠 시나리오'로 결론이 났다.
+'욕심쟁이 현물 세력 형님의 \$31, \$22 청산 물량 모두 다 냠냠 시나리오'로 결론이 났다.
 
 <br>
 
-이걸 왜 이렇게까지 열심히 했을까 싶은 사람도 있을테니까 조금 부연설명을 하면.
+그래서 이게 무슨 의미가 있었나 싶은 사람도 있을테니까 조금 부연설명을 하면.
 
 예를 들어 현선갭을 노리고자 했다면, 사실 우리가 필요한 정보는 딱 3가지다.
 
@@ -297,4 +299,4 @@ date: 2022-11-28 02:42:06 +0900
 
 서론이 길었다.
 
-다음 포스팅부터는 이러한 팬데믹에서 돈을 벌었던 매매 방법을 자세히 이야기해보자.
+다음 포스팅부터는 매매 방법을 자세히 이야기해보자.
