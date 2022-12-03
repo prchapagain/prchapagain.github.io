@@ -69,7 +69,7 @@ dxy = fdr.DataReader('DX-Y.NYB', '2021-12-01')['Close']
 ```python
 ### Series to Dataframe
 merged_df = pd.concat([usdkrw, dxy], axis=1)
-merged_df.columns=[USD/KRW', 'Dollar index']
+merged_df.columns=['USD/KRW', 'Dollar index']
 
 ### Interpolate datetime index
 merged_reindexed_df = merged_df.reindex(
