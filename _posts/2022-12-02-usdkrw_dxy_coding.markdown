@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_Examples
-title: Python으로 달러 환율과 달러 인덱스의 상관관계 분석 및 헷지상품 만들기
+title: Python으로 달러 환율과 달러 인덱스 데이터 다루기 
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
@@ -10,7 +10,7 @@ author: bbchip13
 category: 재테크
 # multiple tag entries are possible
 tags: [
-    재테크, 코인, 달러환율, 달러인덱스,
+    재테크, 코인, 달러환율, 달러인덱스, 상관관계분석, 최소제곱법
     DXY, USD/KRW, Python, Linear regression, Linear algebra, Pearson correlation
 ]
 # thumbnail image for post
@@ -51,9 +51,11 @@ date: 2022-12-02 18:06:06 +0900
 
 ### 코드 주요 부분 설명
 
+<br>
+
 ```python
-usdkrw = fdr.DataReader('USD/KRW', '2021-12-01')['Close']
-dxy = fdr.DataReader('DX-Y.NYB', '2021-12-01')['Close']
+usdkrw = fdr.DataReader('USD/KRW', '2021-12-01')['Close']
+dxy = fdr.DataReader('DX-Y.NYB', '2021-12-01')['Close']
 ```
 
 1년간의 환율, 달러인덱스 데이터를 불러오는 부분.
@@ -151,7 +153,9 @@ plt.legend(loc='upper left')
 plt.show()
 ```
 
-![](../assets/img/posts/2022-12-02-usdkrw_dxy_coding/2022-12-03-01-35-42-image.png)[작성한 코드에 따라 달러 인덱스의 스케일과 Y 절편이 환율에 맞춰서 조정된 모습.]
+![](../assets/img/posts/2022-12-02-usdkrw_dxy_coding/2022-12-03-01-35-42-image.png)
+
+[작성한 코드에 따라 달러 인덱스의 스케일과 Y 절편이 환율에 맞춰서 조정된 모습.]
 
 앞서 구한 regression 값으로 달러 인덱스 값을 스케일링하는 코드이다.
 
@@ -229,6 +233,10 @@ plt.show()
 
 scikit-learn의 linear regression을 이용하여 계수 w를 구하고, 이를 DXY에 곱한다.
 
+중간중간 갭이 좀 생기지만 이 정도면 만족한다.
+
+결론적으로 달러 인덱스 선물을 달러 선물 대신 사용하려면 달러 인덱스 선물 + 10%만큼 더 구매하는 식으로 하면 될 듯.
+
 <br>
 
 ### 정리
@@ -244,8 +252,8 @@ scikit-learn의 linear regression을 이용하여 계수 w를 구하고, 이를 
 5. 꽤나 유사하게 환율의 추세를 따라가기는 하나, 완벽하게 환율 지표를 대체하기는 힘들 듯 하다.
 
 6. 장기적으로 쓰고자하는 목적이면 큰 문제가 되지 않을 듯 하다.
-   
-   
+
+7. <u>달러 선물 대신 달러 인덱스 선물을 써야한다면, 달러 인덱스 선물을 10%정도 더 많이 구매하면 된다.</u>
 
 ### 마치며
 
