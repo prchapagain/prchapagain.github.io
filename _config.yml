@@ -54,9 +54,8 @@ defaults:
 highlighter: rouge
 markdown: kramdown
 kramdown:
-  # This is default for GitHub Pages sites and cannot be changed.
+  input: GFM
   syntax_highlighter: rouge
-
 ###########################################################
 # Plugins (Plugins supported by GitHub Pages https://pages.github.com/versions/)
 ###########################################################
