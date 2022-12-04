@@ -109,7 +109,7 @@ date: 2022-12-04 17:02:00 +0900
 
 실제 데이터를 가지고 간단한 데이터 분석을 해봤는데 해당 내용은 아래 포스팅에서 확인할 수 있다.
 
-[Python으로 달러 환율과 달러 인덱스 데이터 다루기](https://bbchip0103.github.io/posts/2022-12-02-usdkrw_dxy_coding)
+[Python으로 달러 환율과 달러 인덱스 데이터 다루기](/posts/2022-12-02-usdkrw_dxy_coding)
 
 <br>
 

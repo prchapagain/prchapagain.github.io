@@ -41,9 +41,11 @@ date: 2022-12-02 18:06:06 +0900
 
 ### 들어가며
 
-재테크 하다가 모종의 이유로 달러 인덱스 선물을 달러 선물 대신에 써야할 일이 생겼다. 
+아래 포스팅의 이유로 달러 인덱스 선물을 달러 선물 대신에 쓸 수 있는지 검증이 필요하게 되었다. 
 
-이 것이 가능한 지 알아보자.
+[코인거래소 달러 인덱스 선물로 달러 헷징하기](/posts/2022-12-04-use_dxy_instead_of_usdkrw)
+
+python과 통계, 수학을 이용하여 이 것이 가능한 지 알아보자.
 
 (코드 전문은 [Google Colab](https://colab.research.google.com/drive/1fc_Rl_bULL26T6e_QPRmYA1cX73TnREc?usp=sharing)에서 확인할 수 있습니다.)  
 
