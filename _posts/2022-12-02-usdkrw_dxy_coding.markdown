@@ -229,7 +229,9 @@ plt.legend(loc='upper left')
 plt.show()
 ```
 
-![](../assets/img/posts/2022-12-02-usdkrw_dxy_coding/2022-12-03-04-02-47-image.png)[계산된 w를 기반으로 스케일링한 DXY는 확실히 이전에 비해 달러 환율 지표에 잘 맞아보인다.]
+![](../assets/img/posts/2022-12-02-usdkrw_dxy_coding/2022-12-03-04-02-47-image.png)
+
+[계산된 w를 기반으로 스케일링한 DXY는 확실히 이전에 비해 달러 환율 지표에 잘 맞아보인다.]
 
 scikit-learn의 linear regression을 이용하여 계수 w를 구하고, 이를 DXY에 곱한다.
 
@@ -254,6 +256,8 @@ scikit-learn의 linear regression을 이용하여 계수 w를 구하고, 이를 
 6. 장기적으로 쓰고자하는 목적이면 큰 문제가 되지 않을 듯 하다.
 
 7. <u>달러 선물 대신 달러 인덱스 선물을 써야한다면, 달러 인덱스 선물을 10%정도 더 많이 구매하면 된다.</u>
+
+### <br>
 
 ### 마치며
 

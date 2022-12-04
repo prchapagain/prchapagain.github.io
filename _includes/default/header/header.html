@@ -79,3 +79,7 @@
 <meta name="google-site-verification" content="whqPA_9DR1i3xOl-VZbpICEJUa_LJm0NNkjjKRd2T2c" />
 
 <link href="/assets/css/syntax.css" rel="stylesheet" >
+
+{% if page.use_math %}
+  {% include default/mathjax_support.html %}
+{% endif %}
