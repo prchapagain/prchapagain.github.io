@@ -1,6 +1,6 @@
 ---
 ---
-/*! Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+/*! Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
  *  Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
  *  Licensed under MIT
 */
@@ -19,7 +19,7 @@
   --main-container-margin: clamp(5px, calc((100vw / 100) * 3.5 ), 40px);
   /* any page bottom padding */
   --main-container-padding-bottom: calc(var(--main-container-margin) / 2);
-  --main-container-width-limit: 100%;
+  --main-container-width-limit: 800px;
   --main-container-max-width: calc(var(--main-container-width-limit) + (var(--main-container-margin) * 2));
   /* space between containers */
   --multipurpose-container-margin-bottom: 20px;
@@ -53,6 +53,9 @@
 
 {% if site.data.lang.size > 1 and site.data.conf.main.language_switch_lang_list.size > 1 %}
   @import "default/nav/lang-switch";
+  {% if site.data.conf.main.language_translation_offer_box -%}
+    @import "default/lang-offer";
+  {% endif %}
 {% endif %}
 
 {% if site.data.conf.main.scroll_back_to_top_button == true %}
@@ -75,13 +78,9 @@
   {% endif %}
 {% endif %}
 
-{% if site.data.conf.posts.comments.enable and site.data.conf.posts.comments.disqus.enable %}
-  {% assign comment_disqus_enabled = true %}
-{% endif %}
-
-{% if
-  cookie_consent_box_enabled == true or
-  comment_disqus_enabled == true
+{% if cookie_consent_box_enabled == true
+  or site.data.conf.posts.comments.engine == "disqus"
+  or site.data.conf.main.contact_form.enable == true
 %}
   @import "common/button";
 {% endif %}
@@ -156,6 +155,10 @@
   {% endif %}
 {% endif %}
 
+{% if site.data.conf.main.contact_form.enable == true %}
+  @import "contact-form/google-contact-form-iframe";
+{% endif %}
+
 {% if post_list_page_exist or post_exist %}
   @import "common/post-info";
 {% endif %}
@@ -184,7 +187,10 @@
   {% assign language_translation_offer_box_enabled = true %}
 {% endif %}
 
-{% if language_translation_offer_box_enabled == true or cookie_consent_box_enabled == true %}
+{% if language_translation_offer_box_enabled == true
+  or cookie_consent_box_enabled == true
+  or site.data.conf.main.contact_form.enable == true
+%}
   @import "default/sliding-msg-box";
 {% endif %}
 
@@ -196,11 +202,12 @@
   {% assign post_query_tabs_exist = true %}
 {% endif %}
 
-{% if
-  toc_exist == true or
-  post_query_tabs_exist == true or
-  language_translation_offer_box_enabled == true or
-  cookie_consent_box_enabled == true %}
+{% if toc_exist == true
+  or post_query_tabs_exist == true
+  or language_translation_offer_box_enabled == true
+  or cookie_consent_box_enabled == true
+  or site.data.conf.main.contact_form.enable == true
+%}
   @import "common/close-button";
 {% endif %}
 
@@ -230,8 +237,10 @@
     @import "post/table-of-contents";
   {% endif %}
 
-  {% if comment_disqus_enabled == true %}
-    #disqus_thread {
+  {% if site.data.conf.posts.comments.engine != empty
+    and site.data.conf.posts.comments.engine != nil
+  %}
+    #comment_thread {
       margin-top: 30px;
       margin-bottom: 30px;
       /*min-height: 100px;*/

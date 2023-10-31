@@ -1,4 +1,4 @@
-/* Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+/* Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
  * Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
  * Licensed under MIT
 */
@@ -28,9 +28,9 @@
 }
 
 .home-heading-message {
-  font-size: 2.9rem;
+  font-size: 4.2rem;
   font-weight: 700;
-  color: #6a0404;
+  color: var(--home-heading-message-color);
   text-align: center;
   /* for centering home-heading-message */
   display: table-cell;
