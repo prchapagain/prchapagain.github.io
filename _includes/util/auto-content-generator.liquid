@@ -1,5 +1,5 @@
 {%-comment-%}
-  Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+  Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
   Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
   Licensed under MIT
 {%-endcomment-%}
@@ -10,7 +10,6 @@
 {%- assign lng = get_lng -%}
 
 {%- assign readme_lng = lng -%}
-{%- if lng != "en" and lng != "ja" and lng != "pt"%}{%- assign readme_lng = "en" -%}{%-endif-%}
 
 {% include multi_lng/get-page-by-lng-pair-and-lng.liquid lng_pair="id_Mr_Green_Jekyll_Theme" layout="post" lng=readme_lng -%}
 
@@ -20,7 +19,7 @@
   replace: site.data.conf.main.brand_replace, "[Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)"
 %}
 
-{%- for index in (1..7) %}
+{%- for index in (1..5) %}
   {% assign const_sample = const_sample | append: site.data.lang[lng].constants.sample | append: " " %}
 {% endfor -%}
 
@@ -34,19 +33,14 @@
 ### {{ site.data.owner[lng].auto_content.greeting | default: site.data.lang[lng].constants.greetings }}
 {%- endcapture -%}
 
-{%- capture website_greeting_subtext -%}
-{{ site.data.owner[lng].auto_content.greetings_subtext | default: site.data.lang[lng].constants.greetings_subtext }}
-{%- endcapture -%}
-
 {%- capture page_title_text -%}
 # {{ site.data.lang[lng][page.layout].title }}
 {%- endcapture -%}
 
 {%- capture website_info_text_first -%}
 {{ website_greeting_text }}
-{{ website_greeting_subtext }}
 
-<!-- {{ site.data.owner[lng].auto_content.auto_generated_text | default: const_sample }} -->
+{{ site.data.owner[lng].auto_content.auto_generated_text | default: const_sample }}
 {%- endcapture -%}
 
 {%- capture website_info_text_second -%}

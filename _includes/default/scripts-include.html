@@ -1,5 +1,5 @@
 {%-comment-%}
-  Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+  Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
   Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
   Licensed under MIT
 {%-endcomment-%}
@@ -39,7 +39,7 @@
           ,image: {
             titleSrc: 'alt'
             /* Error message */
-            ,tError: '{{ site.data.lang[lng].image_viewer.load_error }}{{ err_img_path }}'
+            ,tError: "{{ site.data.lang[lng].image_viewer.load_error }}{{ err_img_path }}"
             /* Set to null to disable zoom out cursor. */
             /*,cursor: null */
           }
@@ -96,8 +96,8 @@
         paginatorListContainerName: ".pagination_wrapper .pagination"
         ,pageList: ["{{lng_pages}}"]
       {%- if site.data.conf.posts.pager_page_numbers_first_last_buttons %}
-        ,firstButtonName: '{{ site.data.lang[lng].post.pager_buttons.first_post }}'
-        ,lastButtonName: '{{ site.data.lang[lng].post.pager_buttons.last_post }}'
+        ,firstButtonName: "{{ site.data.lang[lng].post.pager_buttons.first_post }}"
+        ,lastButtonName: "{{ site.data.lang[lng].post.pager_buttons.last_post }}"
       {%- endif %}
         ,prevButtonName: "«"
         ,nextButtonName: "»"
@@ -166,26 +166,49 @@
 {% endif -%}
 
 {%comment-%} add disqus comment feature {%-endcomment-%}
-{%- if
-  site.data.conf.posts.comments.enable and
-  site.data.conf.posts.comments.disqus.enable and
-  site.data.owner[lng].disqus_shortname != nil and
-  site.data.owner[lng].disqus_shortname != empty
+{%- if site.data.conf.posts.comments.engine == "disqus"
+  and site.data.owner[lng].comments.disqus.shortname != nil
+  and site.data.owner[lng].comments.disqus.shortname != empty
 -%}
   {%- include default/disqus-scripts.html -%}
+{% endif -%}
+
+{%comment-%} add giscus comment feature {%-endcomment-%}
+{%- if site.data.conf.posts.comments.engine == "giscus"
+  and site.data.owner[lng].comments.giscus.repo != nil and site.data.owner[lng].comments.giscus.repo != empty
+  and site.data.owner[lng].comments.giscus.repo-id != nil and site.data.owner[lng].comments.giscus.repo-id != empty
+  and site.data.owner[lng].comments.giscus.category != nil and site.data.owner[lng].comments.giscus.category != empty
+  and site.data.owner[lng].comments.giscus.category-id != nil and site.data.owner[lng].comments.giscus.category-id != empty
+-%}
+  {%- include default/giscus-scripts.html -%}
 {% endif -%}
 
 {% if site.data.conf.main.cookie_consent.enable -%}
   {%- include default/google-consent-init.html -%}
 {% endif -%}
 
-{% if site.data.owner[lng].google_analytics_id != empty and site.data.owner[lng].google_analytics_id != nil and jekyll.environment != site.data.conf.main.google.analytics.ignore -%}
+{% if site.data.owner[lng].google_analytics_id != empty and site.data.owner[lng].google_analytics_id != nil
+  and jekyll.environment != site.data.conf.main.google.analytics.ignore
+-%}
   {%- include default/google-analytics.html -%}
 {% endif -%}
 
-{% if site.data.lang.size > 1 and site.data.conf.main.language_switch_lang_list.size > 1 and site.data.conf.main.language_translation_offer_box -%}
-  {%- include default/sliding-msg-box.html -%}
+{% if site.data.lang.size > 1 and site.data.conf.main.language_switch_lang_list.size > 1
+  and site.data.conf.main.language_translation_offer_box
+-%}
+  {%- assign language_translation_offer_box = true -%}
   {%- include multi_lng/lang-offer-msg-box.html -%}
+{% endif -%}
+
+{% if site.data.conf.main.contact_form.enable and page.layout == 'about' -%}
+  {%- include default/google-contact-form-iframe.html -%}
+{% endif -%}
+
+{% if site.data.conf.main.cookie_consent.enable
+  or language_translation_offer_box
+  or site.data.conf.main.contact_form.enable
+-%}
+  {%- include default/sliding-msg-box.html -%}
 {% endif -%}
 
 {%- comment -%} iOS Safari Web App fix for open links inside app. (prevent opening in safari) {%- endcomment -%}
@@ -199,20 +222,3 @@
   });
 </script>
 {%- endif -%}
-
-<script type="text/javascript" async
-	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-	extensions: ["tex2jax.js"],
-	jax: ["input/TeX", "output/HTML-CSS"],
-	tex2jax: {
-		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-		displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-		processEscapes: true
-	},
-	"HTML-CSS": { availableFonts: ["TeX"] }
-});
-</script>

@@ -20,9 +20,11 @@ lng_pair: id_links
 #meta_description: ""
 
 # optional
-# if you enabled image_viewer_posts you don't need to enable this. This is only if image_viewer_posts = false
+# please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
+# image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
 #image_viewer_on: true
-# if you enabled image_lazy_loader_posts you don't need to enable this. This is only if image_lazy_loader_posts = false
+# please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
+# image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
 #image_lazy_loader_on: true
 # exclude from on site search
 #on_site_search_exclude: true
@@ -74,15 +76,15 @@ page_data:
     - type: id_jekyiiliquid
       title: "Liquid for Designers"
       url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers"
-      info: "Liquid for Designers wiki on GitHub"
+      info: "Liquid for Designers wiki on GitHub."
     - type: id_jekyiiliquid
       title: "Liquid for Programmers"
       url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers"
-      info: "Liquid for Programmers wiki on GitHub"
+      info: "Liquid for Programmers wiki on GitHub."
     - type: id_jekyiiliquid
       title: "Liquid Reference"
       url: "https://shopify.dev/api/liquid/"
-      info: "Liquid is a template language created by Shopify and written in Ruby. It is now available as an open source project on GitHub"
+      info: "Liquid is a template language created by Shopify and written in Ruby. It is now available as an open source project on GitHub."
 
     # webdesign
     - type: id_webdesign
