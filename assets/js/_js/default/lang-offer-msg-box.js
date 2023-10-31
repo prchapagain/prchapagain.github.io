@@ -1,4 +1,4 @@
-/*! Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+/*! Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
  *  Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
  *  Licensed under MIT
 */
@@ -13,7 +13,9 @@
     , disableExtTranslationOffer: false
     , saveAndClose: saveAndClose
     , storageKey: "doNotOfferLanguages"
-    , slidingBoxId: "lang-offer"
+    , slidingBoxId: "lang-offer-id"
+    , slideType: ""
+    , styleClass: "lang-offer"
   };
 
   function saveAndClose() {
@@ -90,7 +92,8 @@
           if (i != userLngMatchList.length - 1) msgHtml += '<br><br>';
         };
 
-        SlidingMsgBox.init(globals.slidingBoxId, msgHtml, saveAndClose);
+        msgHtml = '<div class="' + globals.styleClass + '">' + msgHtml + '</div>';
+        SlidingMsgBox.init(globals.slidingBoxId, msgHtml, saveAndClose, globals.slideType);
         SlidingMsgBox.show(globals.slidingBoxId);
       }
     }

@@ -1,4 +1,4 @@
-/*! Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+/*! Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
  *  Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
  *  Licensed under MIT
 */
@@ -34,7 +34,7 @@
   properties.resultHeaderTagName = "h1";
   properties.resultMsgTagName = "p";
   properties.resultFoundTitleFormat = "";
-  properties.resultNotFoundTitleText = "No Results Found.";
+  properties.resultNotFoundTitleText = "No results were found.";
   properties.resultNotFoundMsgFormat = "We couldn't find anything associated with '{property}' for '{value}' here.";
   /* optional value */
   properties.showAllFunction = "@@@";

@@ -1,4 +1,4 @@
-/*! Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+/*! Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
  *  Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
  *  Licensed under MIT
 */
@@ -17,6 +17,7 @@
     , consentBarHtml: ""
     , consentSettingHtml: ""
     , hideConsentBarWithSaveButton: false
+    , consentSettingSlideType: ""
     , gtag: function () { }
     , getConsentSettings: getConsentSettings
     , hideConsentBar: hideConsentBar
@@ -29,7 +30,7 @@
   const footerHeight = '--footer-height';
   const footerSelector = '.footer-container';
   const storageKey = "cookieConsentDone";
-  const slidingBoxId = "consent-settings";
+  const slidingBoxId = "cookie-consent-id";
   const cookieNamePrefix = "cookieConsent";
   let settingsVisible = false;
 
@@ -179,7 +180,7 @@
     document.body.appendChild(barHolderDiv);
 
     /* init consent settings */
-    SlidingMsgBox.init(slidingBoxId, globals.consentSettingHtml, hideSettings);
+    SlidingMsgBox.init(slidingBoxId, globals.consentSettingHtml, hideSettings, globals.consentSettingSlideType);
 
     showConsentBar();
   }
