@@ -1,0 +1,54 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: id_Examples
+title: my first post
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+author: khumnath
+# multiple category is not supported
+category: others
+# multiple tag entries are possible
+tags: [
+    github, blog
+]
+# thumbnail image for post
+img: ":post_pic1.jpg"
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+date: 2023-1031 20:52:06 +0900
+
+# if not specified, date will be used.
+#meta_modify_date: 2022-02-10 08:11:06 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# if you enabled image_viewer_posts you don't need to enable this. This is only if image_viewer_posts = false
+#image_viewer_on: true
+# if you enabled image_lazy_loader_posts you don't need to enable this. This is only if image_lazy_loader_posts = false
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+
+# My First Post
+
+This is my first post on GitHub Pages. I'm using Jekyll to generate my site.
+
+## Why GitHub Pages?
+
+GitHub Pages is a great way to host your personal or project website for free. You can use your own domain name, choose from various themes, and customize your site with Jekyll.
+
+## How to get started?
+
+To get started with GitHub Pages, you need to create a repository for your site and configure a publishing source. You can use Markdown or HTML files to create your site content. You can also use Jekyll to add more features and functionality to your site.
+
+For more information, see [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) and [Adding content to your GitHub Pages site using Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll).
+
