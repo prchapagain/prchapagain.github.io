@@ -29,6 +29,9 @@ youtube:
 facebook:
   icon: "fa fa-facebook"
   url: "https://www.facebook.com"
+telegram:
+  icon: "fa fa-telegram"
+  url: "https://t.me""
 # add your new contact
 # your_new_contact:
 #   icon: "fa fa-font"
