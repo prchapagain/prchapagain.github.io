@@ -18,7 +18,7 @@ img: ":post_pic1.jpg"
 #comments_disable: true
 
 # publish date
-date: 2023-1031 20:52:06 +0900
+date: 2023-10-31 20:52:06 +0900
 
 # if not specified, date will be used.
 #meta_modify_date: 2022-02-10 08:11:06 +0900

@@ -130,9 +130,9 @@ post-list:
 
 # for home layout
 home:
-  title: Non-stop developer
+  title: ...............
   button_name: Home
-  new_posts_title: New Articles
+  new_posts_title: Recent Articles
   new_posts_show_more_button: View More ...
 
 # for archives layout
@@ -167,8 +167,8 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: 이것저것 적어놓는 공간
-  greetings_subtext: 개발, 재테크 등
+  greetings: welcome to my git experiments
+  greetings_subtext: I am delighted to have you here
   welcome: Don't give up
   sample: sample
 
