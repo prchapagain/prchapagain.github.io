@@ -1,3 +1,7 @@
+# Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+# Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
+# Licensed under MIT
+
 lng:
   name: English
   # based on ISO_639-1 https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
@@ -11,7 +15,7 @@ lng:
     title: Language
     msg_page: View this page in English.
     # if page translation is not available, use this.
-    msg_site: To English home page
+    msg_site: To home
 
 date:
   # if %b is used in the long format, it will be replaced with the corresponding item in 'months' list below.
@@ -35,7 +39,7 @@ color_scheme_switch_tooltip: Color scheme
 
 search:
   placeholder: Search
-  noResultText: No results found.
+  noResultText: No results were found.
 
 image_viewer:
   load_error: The image could not be loaded.
@@ -72,10 +76,10 @@ post:
     first_post: First
     last_post: Last
   comments:
+    noscript: Please enable JavaScript to view the Comments.
     disqus:
       count_title: Comments
-      noscript: Please enable JavaScript to view the Comments.
-      click_to_load: "Load Comments"
+      click_to_load: "Load comments"
       consent:
         title: Comments (Disqus.com)
         text: >
@@ -130,9 +134,9 @@ post-list:
 
 # for home layout
 home:
-  title: ...............
+  title: Welcome
   button_name: Home
-  new_posts_title: Recent Articles
+  new_posts_title: New Articles
   new_posts_show_more_button: View More ...
 
 # for archives layout
@@ -167,10 +171,14 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: welcome to my git experiments
-  greetings_subtext: I am delighted to have you here
-  welcome: Don't give up
-  sample: sample
+  greetings: Hello
+  welcome: Welcome
+  sample: Sample
+
+# for contact form
+contact_form:
+  button_name: Contact Form
+  formLoadingText: Loading the Contact Form...
 
 # for cookie consent
 cookie_consent:
@@ -205,7 +213,7 @@ cookie_consent:
           These cookies do not store any personally identifiable information.
           $gtag_info
       analytics:
-        title: Performance cookies #Performance and analytics cookies
+        title: Performance cookies
         info: $gtag_info
       preferences:
         title: Functionality cookies

@@ -1,5 +1,5 @@
 ---
-# Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+# Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
 # Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
 # Licensed under MIT
 
@@ -19,6 +19,9 @@ layout: default
   {% endif -%}
 {% endif -%}
 
-{% if site.data.conf.posts.comments.enable and site.data.conf.posts.comments.disqus.enable and page.comments_disable != true %}
-  {% include post/disqus.html %}
+{% if site.data.conf.posts.comments.engine != empty
+  and site.data.conf.posts.comments.engine != nil
+  and page.comments_disable != true
+%}
+  {% include post/comments.html %}
 {% endif %}

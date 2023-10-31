@@ -1,5 +1,5 @@
 ---
-# Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+# Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
 # Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
 # Licensed under MIT
 
@@ -47,6 +47,9 @@ layout: default
     <div class="col-md-12">
       <div class="about-msg markdown-style">
         {{ content }}
+        {%- if site.data.conf.main.contact_form.enable and site.data.conf.others.about.show_contact_form_button %}
+          <a href="javascript:void(0);" class="btn-base " onclick="ContactForm.show();" role="button">{{ site.data.lang[lng].contact_form.button_name }}</a>
+        {% endif -%}
       </div>
     </div>
   </div>
