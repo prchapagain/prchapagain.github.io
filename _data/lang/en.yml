@@ -173,7 +173,7 @@ privacy-policy:
 constants:
   greetings: welcome to my blog
   welcome: welcome.
-  sample: I am pleased to see here.
+  sample: I am pleased to see you here.
 
 # for contact form
 contact_form:
