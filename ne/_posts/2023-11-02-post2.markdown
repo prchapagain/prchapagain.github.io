@@ -1,9 +1,10 @@
+---
 lng_pair: id_02-11-2023
 title: ब्यास स्क्रिप्ट प्रयोग गरेर पोष्ट सिर्जना गर्दै
 author: खुमनाथ
 category: others
 tags: [ ब्यास, ब्लग ]
-img: bash.png
+img: ":post_bash.png"
 date: 2023-11-02 21:04:37 +0900
 #remove '#' on published: false to unpublish post
 #published: false

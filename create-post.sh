@@ -41,6 +41,7 @@ if [ "$DOIT" = true ]; then
 read -p "Enter image name with extension like pic1.png: " image;
 
 cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
+---
 lng_pair: id_$post_id
 title: $post_variable
 author: khumnath
@@ -56,6 +57,7 @@ date: $jekylldate $post_time $time_offset
 EOF
 else
 cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
+---
 lng_pair: id_$post_id
 title: $post_variable
 author: khumnath
@@ -121,6 +123,7 @@ DOIT=$ANSWER
 if [ "$DOIT" = true ]; then
 read -p "Enter image name with extension like pic1.png: " image_np;
 cat >/home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
+---
 lng_pair: id_$post_id
 title: $nepali_title
 author: खुमनाथ
@@ -136,6 +139,7 @@ EOF
 else
 
 cat >/home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
+---
 lng_pair: id_$post_id
 title: $nepali_title
 author: खुमनाथ
