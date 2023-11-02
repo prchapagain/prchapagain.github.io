@@ -34,7 +34,7 @@ function askYesNo {
         fi
 }
 
-askYesNo "Do you have picture to add on page?" true
+askYesNo "Do you have picture to add for page thumbnail?" true
 DOIT=$ANSWER
 
 if [ "$DOIT" = true ]; then
@@ -47,7 +47,7 @@ title: $post_variable
 author: khumnath
 category: others
 tags: [ $tags ]
-img: $image
+img: ":$image"
 date: $jekylldate $post_time $time_offset
 #remove '#' on published: false to unpublish post
 #published: false
@@ -117,7 +117,7 @@ function askpicnp {
         fi
 }
 fi
-askpicnp "Do you have picture to add on nepali page?" true
+askpicnp "Do you have picture to add for page thumbnail?" true
 DOIT=$ANSWER
 
 if [ "$DOIT" = true ]; then
@@ -129,7 +129,7 @@ title: $nepali_title
 author: खुमनाथ
 category: others
 tags: [ $tags_np ]
-img: $image_np
+img: ":$image_np"
 date: $jekylldate $post_time $time_offset
 #remove '#' on published: false to unpublish post
 #published: false
