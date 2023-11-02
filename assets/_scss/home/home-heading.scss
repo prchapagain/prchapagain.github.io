@@ -42,12 +42,7 @@
   margin-top: calc(var(--text-spacing) - 3px);
 }
 
-.home-intro-text > h1,
-.home-intro-text > h2,
-.home-intro-text > h3,
-.home-intro-text > h4,
-.home-intro-text > h5,
-.home-intro-text > h6 {
+.home-intro-text > h1{
   color: var(--home-intro-text-header-color);
 }
 
