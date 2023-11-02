@@ -34,11 +34,11 @@ function askYesNo {
         fi
 }
 
-askYesNo "Do you have picture to add for page thumbnail?" true
+askYesNo "Do you have picture to add for page thumbnail and for page?" true
 DOIT=$ANSWER
 
 if [ "$DOIT" = true ]; then
-read -p "Enter image name with extension like pic1.png: " image;
+read -p "Enter image name with extension (like pic1.png): " image;
 
 cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
 ---
@@ -53,7 +53,7 @@ date: $jekylldate $post_time $time_offset
 #published: false
 #markdown formated page contents below
 ---
-
+![](../assets/img/posts/$image)
 EOF
 else
 cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
@@ -97,31 +97,6 @@ if [ "$DOIT" = true ]; then
 read -p "Enter post title in nepali: " nepali_title;
 touch /home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown 
 read -p "Enter nepali tags separated by commas: " tags_np;
-function askpicnp {
-        QUESTION=$1
-        DEFAULT=$2
-        if [ "$DEFAULT" = true ]; then
-                OPTIONS="[Y/n]"
-                DEFAULT="y"
-            else
-                OPTIONS="[y/N]"
-                DEFAULT="n"
-        fi
-        read -p "$QUESTION $OPTIONS " -n 1 -s -r INPUT
-        INPUT=${INPUT:-${DEFAULT}}
-        echo ${INPUT}
-        if [[ "$INPUT" =~ ^[yY]$ ]]; then
-            ANSWER=true
-        else
-            ANSWER=false
-        fi
-}
-fi
-askpicnp "Do you have picture to add for page thumbnail?" true
-DOIT=$ANSWER
-
-if [ "$DOIT" = true ]; then
-read -p "Enter image name with extension like pic1.png: " image_np;
 cat >/home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
 ---
 lng_pair: id_$post_id
@@ -129,12 +104,13 @@ title: $nepali_title
 author: खुमनाथ
 category: others
 tags: [ $tags_np ]
-img: ":$image_np"
+img: ":$image"
 date: $jekylldate $post_time $time_offset
 #remove '#' on published: false to unpublish post
 #published: false
 #markdown formated page contents below
 ---
+![](../assets/img/posts/$image)
 EOF
 else
 
