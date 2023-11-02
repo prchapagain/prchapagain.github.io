@@ -12,7 +12,7 @@ date: 2023-11-02 21:04:37 +0900
 ---
 ![](../assets/img/posts/bash.png)
 
-
+<br></br>
 this post is generated using a bash script. i generated post and language pair post for nepali language using below script. 
 
   ```bash
