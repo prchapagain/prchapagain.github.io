@@ -29,10 +29,10 @@ language_switch_lang_list: [en, ne]
 
 # if the opened page is not in the user's language list,
 # suggest language(s) matching with the one(s) in browser language list and user language list.
-language_translation_offer_box: true
+language_translation_offer_box: false
 
 # Disable 3rd party translation suggestion for pages with translation.
-language_translation_offer_disable_ext_translation: true
+language_translation_offer_disable_ext_translation: false
 
 # select one below
 # 1. slideBoxTopToDown
@@ -47,7 +47,7 @@ html_lng_with_country_code: true
 language_switch_hover_effect: "hover-effect"
 
 # this enables top nav language switch
-language_switch_top_nav: false
+language_switch_top_nav: true
 
 # replace text with owner[language].brand
 brand_replace: "$site_brand"
