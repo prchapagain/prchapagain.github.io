@@ -1,4 +1,4 @@
-# this will handle to macos hidden folders
+# this will handle to  hidden folders
 # ignore all starts with .* except .git and so on
 .*
 !.git*

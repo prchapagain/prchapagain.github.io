@@ -10,7 +10,7 @@ date: 2023-11-02 21:04:37 +0900
 #published: false
 #markdown formated page contents below
 ---
-![](../assets/img/posts/bash.png)
+![](../assets/img/posts/post_bash.png)
 
 
 यो पोस्ट एक ब्याश स्क्रिप्ट प्रयोग गरेर सिर्जना गरिएको छ। मैले तलको कोड प्रयोग गरेर अंग्रेजी पोस्ट र नेपाली पोस्ट सिर्जना गरें। 
