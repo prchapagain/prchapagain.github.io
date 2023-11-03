@@ -172,8 +172,9 @@ privacy-policy:
 # constants to be replaced for
 constants:
   greetings: welcome to my blog
+  greetings_subtext: I am pleased to see you here.
   welcome: welcome.
-  sample: I am pleased to see you here.
+  sample: sample
 
 # for contact form
 contact_form:

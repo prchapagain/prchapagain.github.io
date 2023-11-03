@@ -4,7 +4,7 @@ title: ब्यास स्क्रिप्ट प्रयोग गरे�
 author: खुमनाथ
 category: others
 tags: [ ब्यास, ब्लग ]
-img: ":bash.png"
+img: ":post_bash.png"
 date: 2023-11-02 21:04:37 +0900
 #remove '#' on published: false to unpublish post
 #published: false
