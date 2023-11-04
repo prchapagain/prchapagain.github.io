@@ -13,9 +13,9 @@ lng:
   switch_title: Ne
   offer:
     title: Language
-    msg_page: View this page in English.
+    msg_page: इंगलिस मा हेर्नुहोस.
     # if page translation is not available, use this.
-    msg_site: To home
+    msg_site: गृहपृष्ठमा जानुहोस
 
 date:
   # if %b is used in the long format, it will be replaced with the corresponding item in 'months' list below.
@@ -23,32 +23,32 @@ date:
   day: "%d"
   year: "%Y"
   # months itself also used in Archive page.
-  months: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+  months: [जनवरी, फेब्रुअरी, मार्च, अप्रिल, मे, जुन, जुलाई, अगस्ट, सेप्टेम्बर, अक्टोबर, नोवेम्बर, डिसेम्बर]
 
 not_found:
-  header: Page not found
-  line1: The page you requested could not be found.
-  line2: Try menu, or site search if available.
+  header: पेज भेटिएन
+  line1: तपाईंले खोज्नुभएको पेज उपलब्ध छैन.
+  line2: सर्च बक्स मा खोज्नुहोस अथवा पेज सुची बाट अन्य पेज हेर्नुहोस.
 
-no_translation_tooltip: No Translation
+no_translation_tooltip: अनुवाद उपलब्ध छैन.
 
 navigation:
-  contact_header: Contact
+  contact_header: सम्पर्क
 
-color_scheme_switch_tooltip: Color scheme
+color_scheme_switch_tooltip: रङ् योजना
 
 search:
-  placeholder: Search
-  noResultText: No results were found.
+  placeholder: खोजि
+  noResultText: नतिजा भेटिएन
 
 image_viewer:
-  load_error: The image could not be loaded.
+  load_error: तस्विर स्थापित हुन सकेन.
 
 copyright:
-  additional_text: " All rights reserved."
+  additional_text: " सम्पूर्ण अधिकार सुरक्षित."
 
 creative_commons:
-  some_rights_reserved: Some rights reserved.
+  some_rights_reserved: केहि अधिकार सुरक्षित.
   # check _data/owner/[language].yml for license type.
   by: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution 4.0 International License.
   by-nd: Except where otherwise noted, content on this web site is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License.
@@ -64,19 +64,19 @@ not-found:
 # for post layout
 post:
   read_time:
-    unit: " min"
-    text: " read"
+    unit: " मिनट"
+    text: " पढ्न"
     # c for char w for word
     word_char: w
     # char or words per minute
     per_minute: 200
   pager_buttons:
-    older_post: "← Older Post"
-    newer_post: "Newer Post →"
-    first_post: First
-    last_post: Last
+    older_post: "← पुराना आलेखहरु"
+    newer_post: "नयाँ आलेखहरु →"
+    first_post: पहिलो आलेख
+    last_post: अन्तिम आलेख
   comments:
-    noscript: Please enable JavaScript to view the Comments.
+    noscript: प्रतिक्रियाहरु हेर्नजाभास्क्रिप्ट आवस्यक छ.
     disqus:
       count_title: Comments
       click_to_load: "Load comments"
@@ -92,94 +92,94 @@ post:
           load_once: Show only this time
           load_and_do_not_ask_again: Always show
   table_of_contents:
-    heading: Contents
+    heading: सामग्री
     tooltip:
-      move: Drag to move
-      close: Close
+      move: सार्न ड्रयाग गर्नुहोस
+      close: बन्द
   share:
-    heading: Share on
-    link_copied: Link copied!
+    heading: शेयर गर्नुहोस
+    link_copied: लिंक प्रतिलिपि गरियो !
     tooltip:
       # keys need to match with _data/share.yml
-      twitter: Twitter
-      facebook: Facebook
-      telegram: Telegram
-      linkedin: LinkedIn
-      email: Email
-      copy_link: Copy link
+      twitter: एक्स (ट्विटर)
+      facebook: फेसबुक
+      telegram: टेलिग्राम
+      linkedin: लिंक्डइन
+      email: इमेल
+      copy_link: लिंक प्रतिलिपि
 
 # for post-list layout
 post-list:
-  title: Blog
-  button_name: Blog
+  title: आलेख
+  button_name: ब्लग
   upside_down_tabs:
     tab:
-      all: All
-      categories: Categories
-      tags: Tags
-      years: Years
-      clear: Clear
-      close: Close
+      all: सबै
+      categories: श्रेणीहरु
+      tags: ट्यागहरु
+      years: वर्षा
+      clear: हटाउने
+      close: बन्द
       tooltip:
-        clear: Clear
-        close: Close
+        clear: हटाउने
+        close: बन्द
     msg:
       property_list:
         # keys need to match with /query/post-query.json
-        tags: Tag
-        category: Category
-        year: Year
+        tags: ट्यागहरु
+        category: श्रेणी
+        year: वर्ष
       # you can use these wildcards, {property} {value} {thumb}
       resultFoundTitleFormat: "{property} : {thumb}"
 
 # for home layout
 home:
-  title: Welcome
-  button_name: Home
-  new_posts_title: New Articles
-  new_posts_show_more_button: View More ...
+  title: स्वागतम्
+  button_name: गृहपृष्ठ
+  new_posts_title: नयाँ लेखहरु
+  new_posts_show_more_button: सबै हेर्नुहोस ...
 
 # for archives layout
 archives:
-  title: Archive
-  button_name: Archive
-  page_header: Archive
+  title: संग्रह
+  button_name: संग्रह
+  page_header: संग्रह
 
 # for about layout
 about:
-  title: About
-  button_name: About
-  email_title: email
+  title: बारेमा
+  button_name: बारेमा
+  email_title: इमेल
 
 # for links layout
 links:
-  title: Links
-  button_name: Links
-  link_text: Web site
-  info_text: Info
+  title: लिंकहरु
+  button_name: लिंकहरु
+  link_text: वेबसाइट
+  info_text: जानकारी
 
 # for projects layout
 projects:
-  title: Projects
-  button_name: Projects
-  read_more_text: Read more
-  read_less_text: Read less
+  title: परियोजनाहरु
+  button_name: परियोजनाहरु
+  read_more_text: पुरै पढ्नुहोस
+  read_less_text: कम्ति पढ्नुहोस
 
 # for privacy-policy layout
 privacy-policy:
-  title: &privacy_policy_title Privacy policy
+  title: &privacy_policy_title गोपनियता नीतिहरु
 
 # constants to be replaced for
 constants:
-  greetings: welcome to my blog
-  greetings_subtext: I am pleased to see you here.nep
-  welcome: welcome.
-  sample: sample
+  greetings: मेरो ब्लगमा स्वागत छ
+  greetings_subtext: तपाईंलाई यँहा देखेर खुशीलाग्यो
+  welcome: स्वागत.
+  sample: नमुना
 
 # for contact form
 contact_form:
-  button_name: Contact Form
-  formLoadingText: Loading the Contact Form...
+  button_name: सम्पर्क फर्म
+  formLoadingText: सम्पर्क फर्म लोड गर्दै...
 
 # for cookie consent
 cookie_consent:
