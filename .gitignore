@@ -16,3 +16,6 @@ Thumbs.db
 
 # diff files
 *.bak
+#drafts
+_posts/draft*
+assets/img/posts/draft*
