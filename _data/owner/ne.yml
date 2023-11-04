@@ -2,10 +2,10 @@
 # Owner's Personal Information
 ###########################################################
 # This is your brand name
-brand: "खुमनाथ को गिट प्रयोगशाला"
+brand: "खुमनाथ को प्रयोगशाला"
 
 # text below the brand name
-brand_sub_text: "एक जिज्ञासु "
+brand_sub_text: "तथा जिज्ञासा र अनुभव को संगालो "
 
 # used for seo meta post author (if it's not defined in post)
 name: "khumnath"
@@ -19,11 +19,11 @@ home:
 
 # about page sub title
 about:
-  sub_title: "Non-stop geek"
+  sub_title: "जिज्ञासु मान्छेको प्रयोगशाला"
 
 # if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
-copyright_start_year: "2023"
+copyright_start_year: "2022"
 
 # make sure creative_commons.enable is true in _data/conf/main.yml file
 creative_commons:
@@ -63,7 +63,7 @@ disqus_shortname: "More"
 
 # if no id is provided, this feature will be disabled.
 # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
-google_analytics_id: "G-ZC0F9H7ZRM"
+google_analytics_id: ""
 
 # there are different ways to verify web page. One is adding this as meta into html.
 # make sure you set meta.google_site_verify: true in _data/conf/main.yml
