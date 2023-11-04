@@ -14,4 +14,4 @@
   {%-endif-%}
 {%- endif -%}
 
-{%- capture copyright_text_out -%} &copy; {{ copyright_year }} {{ site.data.owner[lng].brand }}. {%- endcapture -%}
+{%- capture copyright_text_out -%} &copy; {{ copyright_year }}-{{ site.time | date: '%Y' % }} {{ site.data.owner[lng].brand }}. {%- endcapture -%}

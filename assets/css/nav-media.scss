@@ -64,9 +64,8 @@
   .color_scheme_switch_top_holder {
     /* fixed to top nav */
     position: absolute;
-    display: inline;
-    top: 14px;
-    right: calc(var(--main-container-margin) + 60px);
+    display: inline-block;
+    right: calc(var(--main-container-margin) + 12px);
   }
 {% endif %}
 
@@ -74,7 +73,7 @@
   .top-nav > .lang-switch {
     /* fixed to top nav */
     position: absolute;
-    display: inline;
+    display: contents;
     top: 14px;
     left: unset;
     right: calc(var(--main-container-margin) + 100px);

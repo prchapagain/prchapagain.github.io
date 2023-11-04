@@ -155,7 +155,7 @@ scroll_back_to_top_button: true
 #                Footer Text
 ###########################################################
 # this enables side navigation bar footer
-side_nav_footer: true
+side_nav_footer: false
 
 # this enables footer text to the bottom of the page
 main_footer: true
@@ -213,7 +213,7 @@ top_nav_brand_text_enable: true
 
 # set profile image
 # comment to disable the profile image
-side_nav_profile_img_path: /assets/img/posts/post_pic1.jpg
+side_nav_profile_img_path: https://avatars.githubusercontent.com/u/50103558?v=4
 
 # this adds hover effect to bottom buttons
 side_nav_bottom_buttons_hover_effect: "hover-effect"

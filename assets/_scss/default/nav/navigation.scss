@@ -31,8 +31,6 @@
   margin: 0;
   padding: 0;
   padding-top: var(--main-container-margin);
-  min-height: calc(100vh - var(--side-nav-bottom-buttons-container-height));
-  /* safari height fix */
   width: calc(var(--side-nav-width-def) - 1px);
   display: inline-block;
 }
