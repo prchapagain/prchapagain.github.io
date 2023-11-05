@@ -8,7 +8,7 @@ page_data:
     info: "Your Project page description."
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
-    img: ":projects-heading.jpg"
+    img: ":projects-heading.png"
     back_color: "lightblue"
 
   category:
@@ -104,7 +104,7 @@ page_data:
 
         ### Picture
 
-        ![such a lovely place](:projects-heading.jpg)
+        ![such a lovely place](:projects-heading.png)
 
         ### Picture (centered)
 

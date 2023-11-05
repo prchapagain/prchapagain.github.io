@@ -26,11 +26,11 @@
 }
 
 .about-container .about-img img {
-  min-height: 140px;
-  min-width: 140px;
-  max-height: 140px;
-  max-width: 140px;
-  object-fit: cover;
+  min-height: 110px;
+  min-width: 11opx;
+  max-height: 176px;
+  max-width: 176px;
+  object-fit: scale-down;
 }
 
 .about-container .about-img {
@@ -42,7 +42,7 @@
   top: 50%;
   transform: translateY(-50%);
 
-  margin-left: 160px;
+  margin-left: 90%;
   margin-right: -20px;
   padding-right: 0px;
 }
