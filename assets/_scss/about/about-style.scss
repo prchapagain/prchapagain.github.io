@@ -26,27 +26,21 @@
 }
 
 .about-container .about-img img {
-  min-height: 110px;
-  min-width: 11opx;
-  max-height: 176px;
-  max-width: 176px;
+  max-width: 166px;
   object-fit: scale-down;
 }
 
 .about-container .about-img {
   float: left;
 }
-
 .about-container .about-header {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
-  margin-left: 90%;
-  margin-right: -20px;
-  padding-right: 0px;
+  top: 101%;
+  /* transform: translateY(26%); */
+  margin-left: 43%;
+  /* margin-right: -20px; */
+  padding-right: -3px;
 }
-
 .about-container .about-header > h1 {
   font-weight: 700;
   font-size: 3.5rem;

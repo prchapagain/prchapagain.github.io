@@ -177,7 +177,7 @@ constants:
   sample: sample
 
 # for contact form
-contact_form:
+contact_form: 
   button_name: Contact Form
   formLoadingText: Loading the Contact Form...
 

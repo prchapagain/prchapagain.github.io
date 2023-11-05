@@ -60,6 +60,7 @@ contacts:
 
 # Disqus Short name, make sure comments and disqus are enabled in _data/conf/posts.yml file
 disqus_shortname: "More"
+google_forms_contact_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSceVJI_ZiGVm3VstX-Nnwmca0FubCyQYOBdG-AicPGmbH-Gcg/viewform?usp=sf_link"
 
 # if no id is provided, this feature will be disabled.
 # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
