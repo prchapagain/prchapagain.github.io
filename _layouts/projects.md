@@ -28,6 +28,6 @@ layout: default
 </div>
 <div class="multipurpose-container post-container">
 <p><strong><center> {{ site.data.lang[lng].projects.heading }}</center></strong></p>
-<script src="{{ base.url | prepend: site.url }}/assets/repolist/js/github-repo.js"></script>
+<script src="/assets/repolist/js/github-repo.js"></script>
 <div class="reposWidgit"></div>
 <div>
