@@ -150,3 +150,53 @@
 .archives .year > .month > ul > li:not(:last-child) {
   padding-bottom: 20px;
 }
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  border: 2px solid black;
+  padding: 25px;
+  margin: 20px;
+}
+
+.box div {
+  margin: 5px;
+}
+
+.box p {
+  color: black;
+}
+
+.controls {
+  display: flex;
+}
+
+.horizontalspace {
+  flex-grow: 1;
+}
+
+.stats {
+  display: inline-flex;
+  align-items: center;
+}
+
+.buttons * {
+  margin-left: 5px;
+}
+
+.stats *:not(svg) {
+  margin-right: 5px;
+}
+
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}

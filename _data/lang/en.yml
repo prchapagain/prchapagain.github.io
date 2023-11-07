@@ -164,6 +164,7 @@ projects:
   button_name: Projects
   read_more_text: Read more
   read_less_text: Read less
+  heading: projects i am working on
 
 # for privacy-policy layout
 privacy-policy:
@@ -177,7 +178,7 @@ constants:
   sample: sample
 
 # for contact form
-contact_form: 
+contact_form:
   button_name: Contact Form
   formLoadingText: Loading the Contact Form...
 
