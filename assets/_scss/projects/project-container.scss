@@ -153,19 +153,17 @@
 
     border-radius: 20px;
     color: var(--body-text-color);
-    background-color: var(--body-background-color);
+    background-color: var(--multipurpose-container-background-color);
 }
-.o__view-wrap li:hover, .repo__view-wrap li:hover {
+.o__view-wrap li:hover, .repo__view-wrap:hover {
   color: #42ca5d;
   cursor: pointer;
 }
 .repo__view-wrap li:hover {
-   background-color: #767070;
+   background-color: #f5c7c7;
+   color: #42ca5d;
 }
 
-.repo__view-wrap li:hover > .name{
-    /*text-decoration: underline;*/
-}
 .username {
   position: absolute;
   top: 8px;
@@ -196,7 +194,7 @@
     padding: 20px 0px 5px 0px;
 }
 .octicon.octicon-repo.icon, .octicon.octicon-repo-forked.icon {
-  color: #666;
+  color: #1255e4;
     text-decoration: none;
 }
 a {
@@ -268,7 +266,7 @@ span.icon {
 
 }
 .lang {
-    color: #444;
+    color: #19c12d;
     float:initial;
     margin-left: 60px;
 }
