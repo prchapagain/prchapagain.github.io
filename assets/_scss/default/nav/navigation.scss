@@ -19,7 +19,7 @@
   width: var(--side-nav-width-def);
   position: fixed;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: visible;
   z-index: 1000;
   left: 0;
   top: 0;
