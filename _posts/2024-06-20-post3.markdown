@@ -51,7 +51,7 @@ While NepDate offers a range of features, there are still areas for improvement:
 #### Getting Started
 
 Getting started with NepDate is simple:
-1. Visit the [GitHub repository](https://github.com/khumnath/nepdate) and follow the instructions to install the application.
+1. Visit the [GitHub repository](https://github.com/prchapagain/nepdate) and follow the instructions to install the application.
 2. Explore the various features and customize your settings.
 3. Start managing your dates with ease.
 
@@ -59,7 +59,7 @@ Getting started with NepDate is simple:
 
 I'd love for you to be a part of the NepDate journey! Here's how you can jump in:
 
-- **Download and Explore:** Head over to [GitHub](https://github.com/khumnath/nepdate) (it's like a website for programmers) and search for NepDate. Download the app and see what it can do!
+- **Download and Explore:** Head over to [GitHub](https://github.com/prchapagain/nepdate) (it's like a website for programmers) and search for NepDate. Download the app and see what it can do!
 - **Feedback Please!** Is there anything you think needs improvement? Let me know! Your thoughts are super valuable.
 - **Bug Squashing Brigade:** If you run into any problems while using NepDate, don't hesitate to let me know. Together we can make this app squeaky clean!
 

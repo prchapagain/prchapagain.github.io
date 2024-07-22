@@ -20,7 +20,7 @@ As the developer of Lekhika, I am currently working on enhancing its accuracy an
 ![](../assets/img/posts/post_screenshot.png)  
 ## Installation
 # Clone the repository
-git clone https://github.com/khumnath/fcitx5-table-lekhika.git
+git clone https://github.com/prchapagain/fcitx5-table-lekhika.git
 
 # Navigate to the cloned directory
 cd fcitx5-table-lekhika
