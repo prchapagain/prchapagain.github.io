@@ -1,151 +1,82 @@
 ---
-lng_pair: id_02-11-2023
-title: ब्यास स्क्रिप्ट प्रयोग गरेर पोष्ट सिर्जना गर्दै
-author: खुमनाथ
+lng_pair: id_07-22-2024
+title: नेपाली रेडियो प्लेयरको परिचय
+author: prchapagain
 category: others
-tags: [ ब्यास, ब्लग ]
-img: ":post_bash.png"
-date: 2023-11-02 21:04:37 +0900
+tags: [ ब्लग  वेब एप्लिकेशन, रेडियो, नेपाली ]
+img: ":radio.png"
+date: 2024-07-22 21:04:37 +0900
 #remove '#' on published: false to unpublish post
 #published: false
 #markdown formated page contents below
 ---
-![](../assets/img/posts/post_bash.png)
-
-
-यो पोस्ट एक ब्याश स्क्रिप्ट प्रयोग गरेर सिर्जना गरिएको छ। मैले तलको कोड प्रयोग गरेर अंग्रेजी पोस्ट र नेपाली पोस्ट सिर्जना गरें। 
-  ```bash
-  #!/bin/bash
-
-#!/bin/zsh
-
-################
-# Get  info #
-################
-post_id=`date "+%d-%m-%Y"`
-postdate=`date "+%Y-%m-%d"`
-jekylldate=`date "+%Y-%m-%d"`
-post_time=`date "+%H:%M:%S"`
-time_offset=`date "+%z"`
-read -p "Enter the post name: " post_variable;
-read -p "Enter post title: " english_title;
-touch  /home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown
-read -p "Enter tags separated by commas: " tags;
-function askYesNo {
-        QUESTION=$1
-        DEFAULT=$2
-        if [ "$DEFAULT" = true ]; then
-                OPTIONS="[Y/n]"
-                DEFAULT="y"
-            else
-                OPTIONS="[y/N]"
-                DEFAULT="n"
-        fi
-        read -p "$QUESTION $OPTIONS " -n 1 -s -r INPUT
-        INPUT=${INPUT:-${DEFAULT}}
-        echo ${INPUT}
-        if [[ "$INPUT" =~ ^[yY]$ ]]; then
-            ANSWER=true
-        else
-            ANSWER=false
-        fi
-}
-
-askYesNo "Do you have picture to add for page thumbnail and for page?" true
-DOIT=$ANSWER
-
-if [ "$DOIT" = true ]; then
-read -p "Enter image name with extension (like pic1.png): " image;
-
-cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
 ---
-lng_pair: id_$post_id
-title: $post_variable
-author: khumnath
-category: others
-tags: [ $tags ]
-img: ":$image"
-date: $jekylldate $post_time $time_offset
-#remove '#' on published: false to unpublish post
-#published: false
-#markdown formated page contents below
----
-![](../assets/img/posts/$image)
-EOF
-else
-cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
----
-lng_pair: id_$post_id
-title: $post_variable
-author: khumnath
-category: others
-tags: [ $tags ]
-date: $jekylldate $post_time $time_offset
-#remove '#' on published: false to unpublish post
-#published: false
----
-$page_content
-EOF
-fi
-function asktranslate {
-        QUESTION=$1
-        DEFAULT=$2
-        if [ "$DEFAULT" = true ]; then
-                OPTIONS="[Y/n]"
-                DEFAULT="y"
-            else
-                OPTIONS="[y/N]"
-                DEFAULT="n"
-        fi
-        read -p "$QUESTION $OPTIONS " -n 1 -s -r INPUT
-        INPUT=${INPUT:-${DEFAULT}}
-        echo ${INPUT}
-        if [[ "$INPUT" =~ ^[yY]$ ]]; then
-            ANSWER=true
-        else
-            ANSWER=false
-        fi
-}
+![](../assets/img/posts/radio.png)  
 
-asktranslate "Do you want to create nepali translation of this page?" true
-DOIT=$ANSWER
 
-if [ "$DOIT" = true ]; then
-read -p "Enter post title in nepali: " nepali_title;
-touch /home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown 
-read -p "Enter nepali tags separated by commas: " tags_np;
-cat >/home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
----
-lng_pair: id_$post_id
-title: $nepali_title
-author: खुमनाथ
-category: others
-tags: [ $tags_np ]
-img: ":$image"
-date: $jekylldate $post_time $time_offset
-#remove '#' on published: false to unpublish post
-#published: false
-#markdown formated page contents below
----
-![](../assets/img/posts/$image)
-EOF
-else
+नमस्ते सबैलाई!
 
-cat >/home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
+म तपाईँहरूसँग मेरो पछिल्लो प्रोजेक्टहरू मध्ये एक साझा गर्न पाउँदा उत्साहित छु: नेपाली रेडियो प्लेयर। यो वेब एप्लिकेशन नेपाली रेडियोको जीवन्त र विविध संसारलाई सधैंको लागि सुन्न चाहनेहरूका लागि डिजाइन गरिएको हो। तपाईँ नेपालमा हुनुहुन्छ वा विदेशमा, तपाईँ अब आफ्नो मनपर्ने नेपाली रेडियो स्टेसनहरू सजिलैसँग सुन्न सक्नुहुन्छ।
 ---
-lng_pair: id_$post_id
-title: $nepali_title
-author: खुमनाथ
-category: others
-tags: [ $tags_np ]
-date: $jekylldate $post_time $time_offset
-#remove '#' on published: false to unpublish post
-#published: false
-#markdown formated page contents below
----
-EOF
-fi
-exit 0
-echo "Done! create page content in markdown and paste on newly created file in _posts/$postdate-$post_variable.markdown and language pair folder ne/_posts/$postdate-$post_variable.markdown  "
-```
 
+---
+![](../assets/img/posts/radio_player.png)  
+
+
+## परियोजना अवलोकन
+
+नेपाली रेडियो प्लेयर आधुनिक वेब प्रविधिहरू प्रयोग गरेर बनाइएको एक वेब आधारित अनुप्रयोग हो। यस परियोजनाको लक्ष्य नेपाली रेडियो उत्साहीहरूका लागि एक सहज र रमाइलो सुन्ने अनुभव प्रदान गर्नु हो। यहाँ नेपाली रेडियो प्लेयरले के प्रदान गर्दछ भन्ने छोटो अवलोकन छ:
+
+- **लाइभ रेडियो स्ट्रिम गर्नुहोस्**: विभिन्न नेपाली रेडियो स्टेसनहरूलाई प्रत्यक्ष स्ट्रिम गर्नुहोस्।
+- **सजिलो नेभिगेशन**: सहज प्रयोगकर्ता इन्टरफेसको साथ स्टेसनहरू बीच सजिलै स्विच गर्नुहोस्।
+- **उत्तरदायी डिजाइन**: डेस्कटप, ट्याब्लेट, वा मोबाइल फोनमा रेडियो प्लेयरको मजा लिनुहोस्।
+
+## विशेषताहरू
+
+### च्यानल चयन
+
+- प्रयोगकर्ताहरूले उपलब्ध नेपाली रेडियो स्टेसनहरूको सूचीमा ब्राउज गर्न सक्छन्।
+- स्टेसनहरू विधाका आधारमा वर्गीकृत गरिएका छन्, जसले तपाईँको मनपर्ने संगीत वा टक शो सजिलै पत्ता लगाउन मद्दत गर्दछ।
+
+### श्रेणी फिल्टरिंग
+
+- समाचार, संगीत, टक शोहरू, र थप जस्ता श्रेणीहरूको आधारमा रेडियो स्टेसनहरू फिल्टर गर्नुहोस्।
+- विभिन्न श्रेणीहरू अन्वेषण गरेर नयाँ स्टेसनहरू खोज्नुहोस्।
+
+### प्लेयर अन्तरक्रिया
+
+- प्लेयर इन्टरफेस सरलता र प्रयोगको सहजताका लागि डिजाइन गरिएको हो।
+- प्रयोगकर्ताहरूले केवल केही क्लिकमा प्ले, पज, र स्टेसनहरू स्विच गर्न सक्छन्।
+
+## प्रविधि स्ट्याक
+
+नेपाली रेडियो प्लेयर निम्न प्रविधिहरू प्रयोग गरेर बनाइएको हो:
+
+- **HTML5 & CSS3**: सफा र उत्तरदायी प्रयोगकर्ता इन्टरफेसको लागि।
+- **जाभास्क्रिप्ट**: गतिशील अन्तरक्रिया र कार्यक्षमताको लागि।
+- **React**: अनुप्रयोगको अवस्था र प्रयोगकर्ता इन्टरफेस व्यवस्थापन गर्न।
+- **Node.js**: स्ट्रिमिङ डेटा ह्यान्डल गर्ने ब्याकएन्ड सर्भरका लागि।
+
+## कसरी प्रयोग गर्ने
+
+नेपाली रेडियो प्लेयर प्रयोग गर्नु सजिलो छ:
+
+1. **अनुप्रयोग भ्रमण गर्नुहोस्**: [Nepali Radio Player on GitHub](https://github.com/prchapagain/nepali-radio-player) मा जानुहोस्।
+2. **स्टेसन चयन गर्नुहोस्**: उपलब्ध स्टेसनहरूको सूचीमा ब्राउज गर्नुहोस् र स्ट्रिमिङ सुरु गर्न एकमा क्लिक गर्नुहोस्।
+3. **मज्जा लिनुहोस्**: आफ्नो मनपर्ने नेपाली रेडियो सामग्रीको मजा लिनुहोस्!
+
+## योगदान र प्रतिक्रिया
+
+यो परियोजना खुला स्रोत हो र GitHub मा उपलब्ध छ। म अन्य विकासकर्ताहरूलाई नेपाली संस्कृति र संगीत प्रवर्धन गर्न इच्छुक जो कोहीलाई योगदानको स्वागत गर्छु। यदि तपाईँसँग कुनै सुझाव वा प्रतिक्रिया छ भने, कृपया सम्पर्क गर्न वा पुल अनुरोध पेश गर्न नहिचकिचाउनुहोस्।
+
+रेपो हेर्नुहोस्: [Nepali Radio Player on GitHub](https://github.com/prchapagain/nepali-radio-player)।
+
+## निष्कर्ष
+
+नेपाली रेडियो प्लेयर नेपाली रेडियोलाई सबैका लागि थप पहुँचयोग्य बनाउनको लागि एउटा सानो कदम हो। मलाई आशा छ तपाईँले यसलाई उपयोगी र रमाइलो पाउनुहुनेछ। चाँडै थप अपडेट र सुविधाहरूको लागि रहनुहोस्!
+
+तपाईँको समर्थनको लागि धन्यवाद र सुन्ने मजा लिनुहोस्!
+
+शुभकामना,
+
+PR Chapagain

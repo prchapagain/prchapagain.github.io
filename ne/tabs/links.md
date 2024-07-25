@@ -1,6 +1,5 @@
 ---
 layout: links
-# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_links
 
 # publish date (used for seo)
@@ -42,17 +41,17 @@ lng_pair: id_links
 page_data:
   main:
     header: "Links"
-    info: "Uma descrição para sua página de links."
+    info: "Your Links page description."
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "JekyII / Liquid"
+    - title: "future project"
       type: id_jekyiiliquid
       color: "gray"
-    - title: "Web Design"
+    - title: "coding"
       type: id_webdesign
       color: "#F4A273"
-    - title: "Programação"
+    - title: "web design"
       type: id_programming
       color: "#62b462"
 
@@ -62,33 +61,29 @@ page_data:
     - type: id_programming
       title: "Stack OverFlow"
       url: "https://stackoverflow.com/"
-      info: "Stack Overflow é um site voltado para perguntas e respostas para professionais e entusiastas da programação."
+      info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
 
     # jekyiiliquid
     - type: id_jekyiiliquid
-      title: "Jekyll"
-      url: "https://jekyllrb.com/"
-      info: "Transforme o seu simples texto em websites estáticos e blogs."
+      title: "merobaja vst"
+      url: ""
+      info: "nepali musical instruments vst and AU plugin for mac and windows"
     - type: id_jekyiiliquid
-      title: "Tabela rápida para Jekyll"
-      url: "https://cloudcannon.com/community/jekyll-cheat-sheet/"
-      info: "Existem tantos filtros e variáveis em Jekyll para se lembrar que pode ser difícil lembrar de todos. Essa tabela serve como uma rápida referência para tudo que Jekyll é capaz de fazer."
+      title: "nepali date"
+      url: "https://github.com/khumnath/nepdate"
+      info: "nepdate-widget is a desktop floating widget for Linux that displays the Nepali date. It provides the following features:
+
+Displays the Nepali date on your desktop.
+Can be moved anywhere on the screen.
+with automatic text color adjustment based on the background color."
     - type: id_jekyiiliquid
-      title: "Liquid para Designers"
-      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers"
-      info: "Wiki do Liquid para Designers no GitHub"
-    - type: id_jekyiiliquid
-      title: "Liquid para Programadores"
-      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers"
-      info: "Wiki de Liquid para Programadores no GitHub"
-    - type: id_jekyiiliquid
-      title: "Referências de Liquid"
-      url: "https://shopify.dev/api/liquid/"
-      info: "Liquid é uma linguagem modelo create pelo Shopify e escrita em Ruby. Ela, agora, está disponível em código aberto no GitHub."
+      title: "Nepali Radio Player"
+      url: "https://github.com/prchapagain/nepali-radio-player"
+      info: "Nepali Radio Player is a web-based app providing seamless access to various Nepali radio stations. Features include play/pause, station navigation, and an FM list toggle. The app is responsive, with an interactive UI. Files include HTML, CSS for styling, and JavaScript for functionality."
 
     # webdesign
     - type: id_webdesign
       title: "W3Schools"
       url: "https://www.w3schools.com/"
-      info: "W3Schools oferece tutoriais gratuitos, referências e exercícios nas linguagens mais importantes da web, cobrindo a mais populares como HTML, CSS, JavaScript, Python, SQL, Java e mutio mais."
+      info: "W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many more."
 ---

@@ -5,7 +5,7 @@
 brand: "PR Chapagain's Lab"
 
 # text below the brand name
-brand_sub_text: "and compilation of curiosity and experience"
+brand_sub_text: "The Fusion of Art, Creation, and Technology"
 
 # used for seo meta post author (if it's not defined in post)
 name: "PRCHAAPAGAIN"
@@ -13,9 +13,9 @@ name: "PRCHAAPAGAIN"
 # home page top header texts
 home:
   # you can also use $site_brand, $site_greetings, $site_welcome in line1 and line2 for replacing texts.
-  top_header_line1: "Never stop experiments"
+  top_header_line1: "keep pushing creativity and experimentation,"
   # if commented, top header will be a single line
-  top_header_line2: "Because our knowledge is vastly imperfect"
+  top_header_line2: "for a new opportunity is just around the corner."
 
 # about page sub title
 about:
@@ -48,9 +48,9 @@ meta_common_description: "Your meta description."
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  - github: "khumnath"
-  - email: "nath.khum@gmail.com"
-  - telegram: "khumnath"
+  - github: "prchapagain"
+  - email: "pharshucg@gmail.com"
+  - telegram: "prchapagain"
   #- twitter: ""
   #- instagram: ""
   #- youtube: ""

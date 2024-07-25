@@ -216,4 +216,4 @@ var Widgit = (function() {
 
 })();
     //  SIMPLY PROVIDE THE WIDGIT OBJECT WITH THE CLASS/ID AND YOUR GITHUB USERNAME
-Widgit.repos(".reposWidgit", "khumnath");
+Widgit.repos(".reposWidgit", "prchapagain");

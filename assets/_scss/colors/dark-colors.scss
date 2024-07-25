@@ -82,7 +82,7 @@ $anchor-text-color-dark: #3389de;
 %navigation-colors-dark {
   --side-top-nav-brand-text-color: #{$brand-color-dark};
   --side-top-nav-brand-hover-text-color: #{$header-color-dark};
-  --side-top-nav-background-color: #{$menu-background-dark};
+  --side-top-nav-background-color: #000000;
   --side-nav-sub-title-text-color: #919191;
   --side-nav-copyright-text-color: #{$button-color-dark};
   --side-nav-right-border-color: #{$hr-color-dark};
@@ -219,7 +219,7 @@ $anchor-text-color-dark: #3389de;
 // home/home-heading
 %home-heading-colors-dark {
   --home-heading-message-color: #fff;
-  --home-intro-text-header-color: #{$header-color-dark};
+  --home-intro-text-header-color: #ff0096;
   --home-heading-shadow-color: #888b8b55;
 }
 // layout: about

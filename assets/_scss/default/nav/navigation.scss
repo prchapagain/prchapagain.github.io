@@ -50,17 +50,73 @@
   width: 120px;
   height: 120px;
   margin-bottom: 10px;
+  transition: box-shadow 2s ease-in-out;
+  position: relative;
+  animation: boxShadowChange 4s linear infinite; /* Renamed animation */
+}
+
+/* Define the keyframes for the changing box-shadow effect */
+@keyframes boxShadowChange {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8); /* Pink */
+  }
+  25% {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Cyan */
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Lime */
+  }
+  75% {
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.8); /* Yellow */
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8); /* Pink */
+  }
 }
 
 /* sub title text */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--side-nav-sub-title-text-color);
+  }
+}
+
+@keyframes textColorChange {
+  0% { color: var(--side-nav-sub-title-text-color); }
+  25% { color: #ff6347; } /* Tomato color */
+  50% { color: #4682b4; } /* SteelBlue color */
+  75% { color: #32cd32; } /* LimeGreen color */
+  100% { color: var(--side-nav-sub-title-text-color); }
+}
+
 .side-nav-brand > p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 300;
   color: var(--side-nav-sub-title-text-color);
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
   display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid var(--side-nav-sub-title-text-color);
+  animation: 
+    typewriter 4s steps(40, end) 1s 1 normal both, 
+    blinkCursor 500ms steps(40, end) infinite,
+    textColorChange 8s linear infinite; /* Renamed animation */
 }
+
 
 .top-nav .top-nav-brand {
   font-size: 2.52rem;

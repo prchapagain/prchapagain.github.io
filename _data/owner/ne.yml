@@ -5,17 +5,17 @@
 brand: " पि आर को प्रयोगशाला"
 
 # text below the brand name
-brand_sub_text: "तथा जिज्ञासा र अनुभव को संगालो "
+brand_sub_text: " \"कलात्मकता र सिर्जना अनि प्रविधिको संगम\"" 
 
 # used for seo meta post author (if it's not defined in post)
-name: "khumnath"
+name: "prchapagain"
 
 # home page top header texts
 home:
   # you can also use $site_brand, $site_greetings, $site_welcome in line1 and line2 for replacing texts.
-  top_header_line1: "प्रयोगहरू कहिल्यै नरोक्नुहोस्"
+  top_header_line1: "सिर्जनात्मकता र प्रयोगमा निरन्तरता राख्नुहोस्, "
   # if commented, top header will be a single line
-  top_header_line2: "किनभने हाम्रो ज्ञान एकदमै अपूर्ण छ"
+  top_header_line2: "किनकि एक नयाँ अवसरले तपाईलाई पर्खिरहेको छ।"
 
 # about page sub title
 about:
@@ -48,9 +48,9 @@ meta_common_description: "Your meta description."
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  - github: "khumnath"
-  - email: "nath.khum@gmail.com"
-  - telegram: "khumnath"
+  - github: "prchapagain"
+  - email: "pharshucg@gmail.com"
+  - telegram: "prchapagain"
   #- twitter: ""
   #- instagram: ""
   #- youtube: ""

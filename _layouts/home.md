@@ -50,7 +50,7 @@ layout: default
       {%- include multi_lng/get-localized-long-date-format.liquid date = _post.date -%}
       <a href="{{ site.baseurl }}{{ _post.url }}">{{ page_title }}
         <span>{{ _post.date | date: out_date_format }}</span>
-      </a>
+      </a> 
     </li>
   {% endfor -%}
     <li>

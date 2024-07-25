@@ -1,151 +1,81 @@
 ---
-lng_pair: id_02-11-2023
-title: creating post using bash script
-author: khumnath
+lng_pair: id_07-22-2024
+title: introducing the Nepali Radio Player
+author: prchapagain
 category: others
-tags: [ bash, blog ]
-img: ":post_bash.png"
-date: 2023-11-02 21:04:37 +0900
+tags: [ web application, radio, Nepali  ]
+img: ":radio.png"
+date: 2024-07-22 21:04:37 +0900
 #remove '#' on published: false to unpublish post
 #published: false
 #markdown formated page contents below
 ---
-![](../assets/img/posts/post_bash.png)  
 
-this post is generated using a bash script. i generated post and language pair post for nepali language using below script. 
 
-  ```bash
-#!/bin/bash
+Hello everyone!
 
-#!/bin/zsh
+I'm excited to share with you one of my latest projects: the Nepali Radio Player. This web application is designed to bring the vibrant and diverse world of Nepali radio to listeners everywhere. Whether you're in Nepal or abroad, you can now tune into your favorite Nepali radio stations with ease.
 
-################
-# Get  info #
-################
-post_id=`date "+%d-%m-%Y"`
-postdate=`date "+%Y-%m-%d"`
-jekylldate=`date "+%Y-%m-%d"`
-post_time=`date "+%H:%M:%S"`
-time_offset=`date "+%z"`
-read -p "Enter the post name: " post_variable;
-read -p "Enter post title: " english_title;
-touch  /home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown
-read -p "Enter tags separated by commas: " tags;
-function askYesNo {
-        QUESTION=$1
-        DEFAULT=$2
-        if [ "$DEFAULT" = true ]; then
-                OPTIONS="[Y/n]"
-                DEFAULT="y"
-            else
-                OPTIONS="[y/N]"
-                DEFAULT="n"
-        fi
-        read -p "$QUESTION $OPTIONS " -n 1 -s -r INPUT
-        INPUT=${INPUT:-${DEFAULT}}
-        echo ${INPUT}
-        if [[ "$INPUT" =~ ^[yY]$ ]]; then
-            ANSWER=true
-        else
-            ANSWER=false
-        fi
-}
-
-askYesNo "Do you have picture to add for page thumbnail and for page?" true
-DOIT=$ANSWER
-
-if [ "$DOIT" = true ]; then
-read -p "Enter image name with extension (like pic1.png): " image;
-
-cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
 ---
-lng_pair: id_$post_id
-title: $post_variable
-author: khumnath
-category: others
-tags: [ $tags ]
-img: ":$image"
-date: $jekylldate $post_time $time_offset
-#remove '#' on published: false to unpublish post
-#published: false
-#markdown formated page contents below
----
-![](../assets/img/posts/$image)
-EOF
-else
-cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
----
-lng_pair: id_$post_id
-title: $post_variable
-author: khumnath
-category: others
-tags: [ $tags ]
-date: $jekylldate $post_time $time_offset
-#remove '#' on published: false to unpublish post
-#published: false
----
-$page_content
-EOF
-fi
-function asktranslate {
-        QUESTION=$1
-        DEFAULT=$2
-        if [ "$DEFAULT" = true ]; then
-                OPTIONS="[Y/n]"
-                DEFAULT="y"
-            else
-                OPTIONS="[y/N]"
-                DEFAULT="n"
-        fi
-        read -p "$QUESTION $OPTIONS " -n 1 -s -r INPUT
-        INPUT=${INPUT:-${DEFAULT}}
-        echo ${INPUT}
-        if [[ "$INPUT" =~ ^[yY]$ ]]; then
-            ANSWER=true
-        else
-            ANSWER=false
-        fi
-}
+![](../assets/img/posts/radio.png)  
 
-asktranslate "Do you want to create nepali translation of this page?" true
-DOIT=$ANSWER
 
-if [ "$DOIT" = true ]; then
-read -p "Enter post title in nepali: " nepali_title;
-touch /home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown 
-read -p "Enter nepali tags separated by commas: " tags_np;
-cat >/home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
----
-lng_pair: id_$post_id
-title: $nepali_title
-author: खुमनाथ
-category: others
-tags: [ $tags_np ]
-img: ":$image"
-date: $jekylldate $post_time $time_offset
-#remove '#' on published: false to unpublish post
-#published: false
-#markdown formated page contents below
----
-![](../assets/img/posts/$image)
-EOF
-else
+## Project Overview
 
-cat >/home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
----
-lng_pair: id_$post_id
-title: $nepali_title
-author: खुमनाथ
-category: others
-tags: [ $tags_np ]
-date: $jekylldate $post_time $time_offset
-#remove '#' on published: false to unpublish post
-#published: false
-#markdown formated page contents below
----
-EOF
-fi
-exit 0
-echo "Done! create page content in markdown and paste on newly created file in _posts/$postdate-$post_variable.markdown and language pair folder ne/_posts/$postdate-$post_variable.markdown  "
-```
+The Nepali Radio Player is a web-based application built using modern web technologies. The goal of this project is to provide a seamless and enjoyable listening experience for Nepali radio enthusiasts. Here's a quick overview of what the Nepali Radio Player offers:
+
+- **Stream Live Radio**: Access a variety of Nepali radio stations streaming live.
+- **Easy Navigation**: Switch between stations effortlessly with an intuitive user interface.
+- **Responsive Design**: Enjoy the radio player on any device, whether it's a desktop, tablet, or mobile phone.
+
+## Features
+
+### Channel Selection
+
+- Users can browse through a list of available Nepali radio stations.
+- Stations are categorized by genre, making it easy to find the type of music or talk show you’re in the mood for.
+
+### Category Filtering
+
+- Filter radio stations based on categories like news, music, talk shows, and more.
+- Discover new stations by exploring different categories.
+
+### Player Interaction
+
+- The player interface is designed for simplicity and ease of use.
+- Users can play, pause, and switch stations with just a few clicks.
+
+## Technology Stack
+
+The Nepali Radio Player is built using the following technologies:
+
+- **HTML5 & CSS3**: For a clean and responsive user interface.
+- **JavaScript**: For dynamic interactions and functionality.
+- **React**: To manage the application's state and user interface.
+- **Node.js**: For the backend server that handles streaming data.
+
+## How to Use
+
+Using the Nepali Radio Player is straightforward:
+
+1. **Visit the Application**: Go to [Nepali Radio Player on GitHub](https://github.com/prchapagain/nepali-radio-player).
+2. **Select a Station**: Browse through the list of available stations and click on one to start streaming.
+3. **Enjoy**: Sit back and enjoy your favorite Nepali radio content!
+
+## Contribution and Feedback
+
+This project is open source and available on GitHub. I welcome contributions from other developers who are passionate about promoting Nepali culture and music. If you have any suggestions or feedback, please feel free to reach out or submit a pull request.
+
+Check out the repository here: [Nepali Radio Player on GitHub](https://github.com/prchapagain/nepali-radio-player).
+
+## Conclusion
+
+The Nepali Radio Player is a small step towards making Nepali radio more accessible to everyone. I hope you find it useful and enjoyable. Stay tuned for more updates and features coming soon!
+
+Thank you for your support and happy listening!
+
+Best regards,
+
+PR Chapagain
+
 

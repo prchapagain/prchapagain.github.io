@@ -12,7 +12,7 @@ post_time=`date "+%H:%M:%S"`
 time_offset=`date "+%z"`
 read -p "Enter the post name: " post_variable;
 read -p "Enter post title: " english_title;
-touch  /home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown
+touch  /home/computebox/Documents/prchapagain.github.io/_posts/$postdate-$post_variable.markdown
 read -p "Enter tags separated by commas: " tags;
 function askYesNo {
         QUESTION=$1
@@ -40,11 +40,11 @@ DOIT=$ANSWER
 if [ "$DOIT" = true ]; then
 read -p "Enter image name with extension (like pic1.png): " image;
 
-cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
+cat >/home/computebox/Documents/prchapagain.github.io/_posts/$postdate-$post_variable.markdown<<EOF
 ---
 lng_pair: id_$post_id
 title: $post_variable
-author: khumnath
+author: prchapagain
 category: others
 tags: [ $tags ]
 img: ":$image"
@@ -56,11 +56,11 @@ date: $jekylldate $post_time $time_offset
 ![](../assets/img/posts/$image)
 EOF
 else
-cat >/home/computebox/Documents/khumnath.github.io/_posts/$postdate-$post_variable.markdown<<EOF
+cat >/home/computebox/Documents/prchapagain.github.io/_posts/$postdate-$post_variable.markdown<<EOF
 ---
 lng_pair: id_$post_id
 title: $post_variable
-author: khumnath
+author: prchapagain
 category: others
 tags: [ $tags ]
 date: $jekylldate $post_time $time_offset
@@ -95,9 +95,9 @@ DOIT=$ANSWER
 
 if [ "$DOIT" = true ]; then
 read -p "Enter post title in nepali: " nepali_title;
-touch /home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown 
+touch /home/computebox/Documents/prchapagain.github.io/ne/_posts/$postdate-$post_variable.markdown 
 read -p "Enter nepali tags separated by commas: " tags_np;
-cat >/home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
+cat >/home/computebox/Documents/prchapagain.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
 ---
 lng_pair: id_$post_id
 title: $nepali_title
@@ -114,7 +114,7 @@ date: $jekylldate $post_time $time_offset
 EOF
 else
 
-cat >/home/computebox/Documents/khumnath.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
+cat >/home/computebox/Documents/prchapagain.github.io/ne/_posts/$postdate-$post_variable.markdown<<EOF
 ---
 lng_pair: id_$post_id
 title: $nepali_title

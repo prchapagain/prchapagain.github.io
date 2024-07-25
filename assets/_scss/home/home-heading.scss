@@ -24,17 +24,29 @@
   border-radius: 10px;
   max-width: var(--main-container-width-limit);
   width: 100%;
+  opacity: 0.8; /* Adjust the opacity value as needed */
   height: auto;
 }
 
 .home-heading-message {
   font-size: 3.2rem;
   font-weight: 400;
-  color: #6e0b0b;
+  color: #ffffff;
   text-align: center;
-  /* for centering home-heading-message */
+  /* Centering the element */
   display: table-cell;
   vertical-align: middle;
+
+  /* 3D Text Effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+               -2px -2px 4px rgba(0, 0, 0, 0.5),
+               2px -2px 4px rgba(0, 0, 0, 0.5),
+               -2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+  
+
+  /* Optional: Adding padding to enhance the effect */
+  padding: 10px;
 }
 
 .home-intro-text {

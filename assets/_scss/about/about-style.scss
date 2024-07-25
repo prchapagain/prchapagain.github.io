@@ -44,7 +44,7 @@
 .about-container .about-header > h1 {
   font-weight: 700;
   font-size: 3.5rem;
-  margin-top: 0px;
+  margin-top: -10px;
   color: var(--about-header-title-color);
   width: calc((100vw - var(--side-nav-width)) / 2);
 }

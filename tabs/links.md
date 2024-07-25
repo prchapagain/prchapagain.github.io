@@ -1,6 +1,5 @@
 ---
 layout: links
-# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_links
 
 # publish date (used for seo)
@@ -46,13 +45,13 @@ page_data:
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "JekyII / Liquid"
+    - title: "future project"
       type: id_jekyiiliquid
       color: "gray"
-    - title: "Web Design"
+    - title: "coding"
       type: id_webdesign
       color: "#F4A273"
-    - title: "Programming"
+    - title: "web design"
       type: id_programming
       color: "#62b462"
 
@@ -66,25 +65,21 @@ page_data:
 
     # jekyiiliquid
     - type: id_jekyiiliquid
-      title: "Jekyll"
-      url: "https://jekyllrb.com/"
-      info: "Transform your plain text into static websites and blogs."
+      title: "merobaja vst"
+      url: ""
+      info: "nepali musical instruments vst and AU plugin for mac and windows"
     - type: id_jekyiiliquid
-      title: "Jekyll Cheat Sheet"
-      url: "https://cloudcannon.com/community/jekyll-cheat-sheet/"
-      info: "There are so many Jekyll variables and filters to remember and it can be tricky to keep it all in your head. This cheat sheet serves as a quick reference of everything Jekyll can do."
+      title: "nepali date"
+      url: "https://github.com/khumnath/nepdate"
+      info: "nepdate-widget is a desktop floating widget for Linux that displays the Nepali date. It provides the following features:
+
+Displays the Nepali date on your desktop.
+Can be moved anywhere on the screen.
+with automatic text color adjustment based on the background color."
     - type: id_jekyiiliquid
-      title: "Liquid for Designers"
-      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers"
-      info: "Liquid for Designers wiki on GitHub."
-    - type: id_jekyiiliquid
-      title: "Liquid for Programmers"
-      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers"
-      info: "Liquid for Programmers wiki on GitHub."
-    - type: id_jekyiiliquid
-      title: "Liquid Reference"
-      url: "https://shopify.dev/api/liquid/"
-      info: "Liquid is a template language created by Shopify and written in Ruby. It is now available as an open source project on GitHub."
+      title: "Nepali Radio Player"
+      url: "https://github.com/prchapagain/nepali-radio-player"
+      info: "Nepali Radio Player is a web-based app providing seamless access to various Nepali radio stations. Features include play/pause, station navigation, and an FM list toggle. The app is responsive, with an interactive UI. Files include HTML, CSS for styling, and JavaScript for functionality."
 
     # webdesign
     - type: id_webdesign
