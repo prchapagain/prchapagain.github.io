@@ -13,6 +13,9 @@ date: 2024-07-26 21:04:37 +0900
 # CV Maker Project
 
 Welcome to the CV Maker project! This tool is designed to help you create professional CVs with ease. Below, you'll find an overview of the project, its features, and how to use it.
+---
+![](../assets/img/posts/cv.png)  
+---
 
 ## Overview
 
