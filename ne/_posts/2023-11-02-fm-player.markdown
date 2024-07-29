@@ -11,7 +11,7 @@ date: 2024-07-22 21:04:37 +0900
 #markdown formated page contents below
 ---
 ---
-![](../assets/img/posts/radio.png)  
+
 
 
 नमस्ते सबैलाई!
@@ -20,8 +20,7 @@ date: 2024-07-22 21:04:37 +0900
 ---
 
 ---
-![](../assets/img/posts/radio_player.png)  
-
+<iframe src="https://prchapagain.com.np/nepali-radio-player/" width="100%" height="500"></iframe>
 
 ## परियोजना अवलोकन
 

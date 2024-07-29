@@ -1,6 +1,7 @@
 ---
 lng_pair: id_07-22-2024
 title: introducing the Nepali Radio Player
+
 author: prchapagain
 category: others
 tags: [ web application, radio, Nepali  ]
@@ -17,7 +18,9 @@ Hello everyone!
 I'm excited to share with you one of my latest projects: the Nepali Radio Player. This web application is designed to bring the vibrant and diverse world of Nepali radio to listeners everywhere. Whether you're in Nepal or abroad, you can now tune into your favorite Nepali radio stations with ease.
 
 ---
-![](../assets/img/posts/radio.png)  
+<iframe src="https://prchapagain.com.np/nepali-radio-player/" width="100%" height="500"></iframe>
+
+
 
 
 ## Project Overview
