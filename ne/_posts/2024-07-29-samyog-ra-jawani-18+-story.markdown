@@ -1,6 +1,6 @@
 ---
 lng_pair: id_07-28-2024  
-title: संयोग र जवानी |यौन कथा|18+story 
+title: संयोग र जवानी यौन कथा 
 author: PR Chapagain  
 category: Others  
 tags: [poem, quotes, nepali lekh, poetry]  

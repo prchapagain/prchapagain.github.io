@@ -1,6 +1,6 @@
 ---
 lng_pair: id_07-29-2024-sathi
-title: साथि को डेट |कथा 
+title: साथि को डेट कथा 
 author: PR Chapagain  
 category: Others  
 tags: [poem, quotes, nepali lekh, poetry story]  

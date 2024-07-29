@@ -18,7 +18,7 @@ date: 2023-07-23 21:04:37 +0900
         <span style="color: red;">सहित्य</span>
     </div>
     <div style="font-size: 24px; margin: 0; flex-grow: 1; text-align: center;">
-        चिहानको हासो|(कथा)
+        चिहानको हासो(कथा)
     </div>
 </div>
 

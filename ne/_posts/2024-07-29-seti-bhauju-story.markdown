@@ -1,6 +1,6 @@
 ---
 lng_pair: id_07-29-2024-seti
-title: सेती भाउजु |कथा
+title: सेती भाउजु कथा
 author: PR Chapagain  
 category: Others  
 tags: [poem, quotes, nepali lekh, poetry story]  

@@ -1,9 +1,9 @@
 ---
 lng_pair: id_07-29-2024-muktak
-title: मुक्तक "संग्रह"
+title: मुक्तक संग्रह
 author: PR Chapagain  
 category: Others  
-tags: [poem, quotes,muktak,  nepali lekh, poetry story]  
+tags: [poem, quotes,muktak, nepali lekh, poetry story]  
 img: ":muktak.png"  
 date: 2023-07-23 21:04:37 +0900  
 #remove '#' on published: false to unpublish post  
@@ -18,7 +18,7 @@ date: 2023-07-23 21:04:37 +0900
         <span style="color: red;">साहित्य</span>
     </div>
     <div style="font-size: 24px; margin: 0; flex-grow: 1; text-align: center;">
-       मुक्तक "संग्रह"
+       मुक्तक संग्रह
     </div>
 </div>
 
