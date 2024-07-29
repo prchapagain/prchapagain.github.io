@@ -71,10 +71,10 @@ post:
     # char or words per minute
     per_minute: 200
   pager_buttons:
-    older_post: "← पुराना आलेखहरु"
-    newer_post: "नयाँ आलेखहरु →"
-    first_post: पहिलो आलेख
-    last_post: अन्तिम आलेख
+    older_post: "← पुराना ब्लगहरु"
+    newer_post: "नयाँ ब्लगहरु →"
+    first_post: पहिलो ब्लग
+    last_post: अन्तिम ब्लग
   comments:
     noscript: प्रतिक्रियाहरु हेर्नजाभास्क्रिप्ट आवस्यक छ.
     disqus:
@@ -110,14 +110,14 @@ post:
 
 # for post-list layout
 post-list:
-  title: आलेख
+  title: ब्लग
   button_name: ब्लग
   upside_down_tabs:
     tab:
       all: सबै
       categories: श्रेणीहरु
       tags: ट्यागहरु
-      years: वर्षा
+      years: वर्ष
       clear: हटाउने
       close: बन्द
       tooltip:
